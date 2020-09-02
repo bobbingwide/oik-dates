@@ -63,7 +63,7 @@ function bw_timepicker_enqueue_script( ) {
 if ( !function_exists( "bw_form_field_time" ) ) { 
 function bw_form_field_time( $name, $type, $title, $value, $args ) {
   $args['#length'] = bw_array_get( $args, '#length', 8 );
-  wp_enqueue_style( "jquery-ui-timepicker-css", oik_url( "css/timepicker.css", "oik-dates") );
+  wp_enqueue_style( "jquery-ui-timepicker-css", oik_url( "css/timePicker.css", "oik-dates") );
   bw_timepicker_enqueue_script();
   ///bw_jquery( "#${name}", "timePicker", bw_jkv( "dateFormat : 'hh-ii-ss', changeMonth: true, changeYear: true" ) );
   //bw_jquery( "#${name}", "timepicker" );

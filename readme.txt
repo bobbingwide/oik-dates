@@ -1,10 +1,10 @@
 === oik-dates ===
 Contributors: bobbingwide
-Donate link: http://www.oik-plugins.com/oik/oik-donate/
+Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: shortcodes, smart, lazy
-Requires at least: 3.7
-Tested up to: 3.8.1
-Stable tag: 0.1
+Requires at least: 5.5
+Tested up to: 5.5.1
+Stable tag: 0.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: oik-dates
@@ -92,14 +92,21 @@ ACF's time picker is provided as an Add on http://www.advancedcustomfields.com/a
 1. 
 
 == Upgrade Notice ==
+= 0.2.0 =
+Tested up to WordPress 5.5.1 with PHP 7.4 
+
 = 0.1 =
 This is prototype code built to discover what could be needed in the post meta project
 
 github.com/ericandrewlewis/wordpress-metadata-ui-api
 
  
-
 == Changelog ==
+= 0.2.0 = 
+* Fixed: Correct case of timePicker.css,[github bobbingwide oik-dates issues 1]
+* Tested: With WordPress 5.5.1 and WordPress Multi Site
+* Tested: With PHP 7.4
+
 = 0.1 =
 * Added: Plugin cloned the "date" field from oik-fields
 * Added: jQuery timePicker for the time field
@@ -107,5 +114,5 @@ github.com/ericandrewlewis/wordpress-metadata-ui-api
 
 == Further reading ==
 If you want to read more about the oik fields then please visit the
-[oik-fields](http://www.oik-plugins.com/oik-plugins/oik-fields) 
+[oik-fields](https://www.oik-plugins.com/oik-plugins/oik-fields) 
 

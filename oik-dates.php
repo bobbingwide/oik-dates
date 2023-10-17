@@ -9,7 +9,7 @@ Author: bobbingwide
 Author URI: https://www.bobbingwide.com/about-bobbing-wide
 License: GPL2
 
-    Copyright 2014-2020 Bobbing Wide (email : herb@bobbingwide.com )
+    Copyright 2014-2020, 2023 Bobbing Wide (email : herb@bobbingwide.com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License version 2,

@@ -1,4 +1,4 @@
-<?php // (C) Copyright Bobbing Wide 2013-2014
+<?php // (C) Copyright Bobbing Wide 2013-2014, 2023
 
 /**
  * Enqueue the debug script if needed otherwise enqueue the minified (packed) one
@@ -31,7 +31,7 @@ function bw_form_field_date( $name, $type, $title, $value, $args ) {
   wp_enqueue_style( "jquery-ui-theme-css", oik_url( "css/jquery-ui-1.9.2.custom.css" ) );
    
   bw_datepicker_enqueue_script();
-  bw_jquery( "#${name}", "datepicker", bw_jkv( "dateFormat : 'yy-mm-dd', changeMonth: true, changeYear: true" ) );
+  bw_jquery( "#{$name}", "datepicker", bw_jkv( "dateFormat : 'yy-mm-dd', changeMonth: true, changeYear: true" ) );
   if ( $value ) {
     $value = bw_format_date( $value );
   }
@@ -65,9 +65,9 @@ function bw_form_field_time( $name, $type, $title, $value, $args ) {
   $args['#length'] = bw_array_get( $args, '#length', 8 );
   wp_enqueue_style( "jquery-ui-timepicker-css", oik_url( "css/timePicker.css", "oik-dates") );
   bw_timepicker_enqueue_script();
-  ///bw_jquery( "#${name}", "timePicker", bw_jkv( "dateFormat : 'hh-ii-ss', changeMonth: true, changeYear: true" ) );
-  //bw_jquery( "#${name}", "timepicker" );
-  bw_jquery( "#${name}", "timePicker", bw_jkv( "startTime: '00:00', endTime: '23:30', show24Hours: false, separator: ':', step: 30" ) );
+  ///bw_jquery( "#{$name}", "timePicker", bw_jkv( "dateFormat : 'hh-ii-ss', changeMonth: true, changeYear: true" ) );
+  //bw_jquery( "#{$name}", "timepicker" );
+  bw_jquery( "#{$name}", "timePicker", bw_jkv( "startTime: '00:00', endTime: '23:30', show24Hours: false, separator: ':', step: 30" ) );
   if ( $value ) {
     
     $value2 = bw_format_date( $value, "H:i" );
@@ -157,6 +157,3 @@ function bw_theme_field_time( $key, $value, $field=null ) {
   }  
 }
 }
-
-
-

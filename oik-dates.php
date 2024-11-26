@@ -101,7 +101,7 @@ function oikd8_query_field_types( $field_types ) {
  * @return string the new date
  */
 if( !function_exists( "bw_date_adjust" ) ) {
-function bw_date_adjust( $adjustment="1 year", $date=null, $format='Y-m-d' ) {
+function bw_date_adjust( $adjustment="1 year", $date='now', $format='Y-m-d' ) {
   $adate = date_create( $date );
   date_add( $adate, date_interval_create_from_date_string( $adjustment ));
   return( date_format( $adate, $format ) );
@@ -137,7 +137,7 @@ function oikd8_default_meta_value_date( $meta_value, $atts ) {
     default: 
       bw_trace2( $meta_value, "meta_value before" );
      
-      $meta_value = bw_date_adjust( $meta_value, null, "Y-m-d" );
+      $meta_value = bw_date_adjust( $meta_value, 'now', "Y-m-d" );
       
       bw_trace2( $meta_value, "meta_value after" );
       break;

@@ -47,7 +47,7 @@ function bw_otd_day( $date=null ) {
  * is_multiple()     null
  */ 
 function bw_otd_base_date( $atts ) {
-  $base_date = null;
+  $base_date = '';
   if ( !is_single() ) {
     
   } else {

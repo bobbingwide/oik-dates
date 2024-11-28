@@ -1,4 +1,4 @@
-<?php // (C) Copyright Bobbing Wide 2014
+<?php // (C) Copyright Bobbing Wide 2014, 2024
 
 /**
  * Return the date in the given format
@@ -107,7 +107,7 @@ function bw_otd_default_periods() {
  * @return string - generated HTML
  */
 function bw_otd( $atts=null, $content=null, $tag=null ) {
-  $periods = str_getcsv( bw_array_get( $atts, "periods", bw_otd_default_periods() ) );
+  $periods = str_getcsv( bw_array_get( $atts, "periods", bw_otd_default_periods() ), ',', '"', '' );
   $atts['post_type'] = bw_as_array( bw_array_get( $atts, "post_type", "post" ) );
   $base_date = bw_otd_base_date( $atts );
   $exact = bw_array_get( $atts, "exact", null );

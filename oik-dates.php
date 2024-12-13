@@ -9,7 +9,7 @@ Author: bobbingwide
 Author URI: https://bobbingwide.com/about-bobbing-wide
 License: GPL2
 
-    Copyright 2014-2020, 2023 Bobbing Wide (email : herb@bobbingwide.com )
+    Copyright 2014-2020, 2023, 2024 Bobbing Wide (email : herb@bobbingwide.com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License version 2,
@@ -136,8 +136,10 @@ function oikd8_default_meta_value_date( $meta_value, $atts ) {
     
     default: 
       bw_trace2( $meta_value, "meta_value before" );
-     
-      $meta_value = bw_date_adjust( $meta_value, 'now', "Y-m-d" );
+	  $time = strtotime( $meta_value );
+	  $meta_value = date( 'Y-m-d', $time );
+
+      //$meta_value = bw_date_adjust( $meta_value, 'now', "Y-m-d" );
       
       bw_trace2( $meta_value, "meta_value after" );
       break;

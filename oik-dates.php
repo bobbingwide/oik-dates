@@ -4,12 +4,12 @@ Plugin Name: oik-dates
 Depends: oik base plugin, oik fields
 Plugin URI: https://www.oik-plugins.com/oik-plugins/oik-dates
 Description: Implements date based field types for oik-fields 
-Version: 0.2.1
+Version: 0.3.0
 Author: bobbingwide
 Author URI: https://bobbingwide.com/about-bobbing-wide
 License: GPL2
 
-    Copyright 2014-2020, 2023, 2024 Bobbing Wide (email : herb@bobbingwide.com )
+    Copyright 2014-2020, 2023, 2024, 2025 Bobbing Wide (email : herb@bobbingwide.com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License version 2,

@@ -4,8 +4,8 @@
 * Donate link: https://www.oik-plugins.com/oik/oik-donate/
 * Tags: shortcodes, smart, lazy
 * Requires at least: 5.5
-* Tested up to: 6.4-beta3
-* Stable tag: 0.2.1
+* Tested up to: 6.7.1
+* Stable tag: 0.3.0
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Text Domain: oik-dates
@@ -93,6 +93,9 @@ ACF's time picker is provided as an Add on http://www.advancedcustomfields.com/a
 1.
 
 ## Upgrade Notice 
+# 0.3.0 
+Update for support for PHP 8.3 and PHP 8.4
+
 # 0.2.1 
 Update for support for PHP 8.1 and PHP 8.2
 
@@ -106,12 +109,18 @@ github.com/ericandrewlewis/wordpress-metadata-ui-api
 
 
 ## Changelog 
+# 0.3.0 
+* Changed: Call strtotime() rather than bw_date_adjust() to adjust the meta_value #3
+* Changed: Support PHP 8.4's str_getcsv() change #2
+* Changed:  Pass now rather than null to bw_date_adjust #2
+* Tested: With WordPress 6.7.1 and WordPress Multisite
+* Tested: With PHP 8.3 and PHP 8.4
+
 # 0.2.1 
 * Changed: Support PHP 8.1 and PHP 8.2,https://github.com/bobbingwide/oik-dates/issues/2
 * Tested: With WordPress 6.4-beta3 and WordPress Multisite
 * Tested: With PHP 8.0, PHP 8.1 and PHP 8.2
 * Tested: With PHPUnit 9.6
-
 
 # 0.2.0 
 * Fixed: Correct case of timePicker.css,https://github.com/bobbingwide/oik-dates/issues/1
